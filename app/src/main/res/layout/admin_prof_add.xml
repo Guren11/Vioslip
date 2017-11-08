@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2980b9">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        ></include>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/tool_bar"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tx_admin_prof_name"
+        android:textColorHint="@color/colorAccent"
+        android:theme="@style/TextLabel">
+
+        <EditText
+            android:id="@+id/prof_add_pname"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tool_bar"
+            android:ems="13"
+            android:hint="Full Name"
+            android:inputType="textPersonName" />
+    </android.support.design.widget.TextInputLayout>
+
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/department_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tx_admin_prof_name"
+        android:layout_alignStart="@+id/tx_admin_prof_name"
+        android:layout_below="@+id/tx_admin_prof_name"
+        android:layout_marginTop="25dp" />
+    <android.support.design.widget.TextInputLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/department_spinner"
+        android:layout_alignEnd="@+id/department_spinner"
+        android:textColorHint="@color/colorAccent"
+        android:theme="@style/TextLabel"
+        android:id="@+id/tx_admin_prof_username">
+
+        <EditText
+            android:id="@+id/prof_add_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/department_spinner"
+            android:layout_below="@+id/department_spinner"
+            android:layout_marginTop="33dp"
+            android:ems="10"
+            android:hint="Username"
+            android:inputType="textPersonName" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/tx_admin_prof_username"
+        android:layout_alignStart="@+id/tx_admin_prof_username"
+        android:layout_alignEnd="@+id/tx_admin_prof_username"
+        android:textColorHint="@color/colorAccent"
+        android:theme="@style/TextLabel"
+        android:id="@+id/tx_admin_prof_pass">
+
+
+    <EditText
+        android:id="@+id/prof_add_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tx_admin_prof_username"
+        android:layout_alignStart="@+id/tx_admin_prof_username"
+        android:layout_below="@+id/tx_admin_prof_username"
+        android:layout_marginTop="27dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Password"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <EditText
+        android:id="@+id/ed_admin_prof_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tx_admin_prof_pass"
+        android:layout_below="@+id/tx_admin_prof_pass"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:layout_alignEnd="@+id/tx_admin_prof_pass"
+        android:textColor="@color/colorAccent"
+        android:hint="Confirm Password"
+        android:textColorHint="@color/colorAccent"
+      />
+
+    <Button
+        android:id="@+id/btn_admin_addprof"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/ed_admin_prof_confirm"
+        android:layout_alignStart="@+id/ed_admin_prof_confirm"
+        android:layout_below="@+id/ed_admin_prof_confirm"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rounded_button"
+        android:text="Submit"
+        android:textColor="#2980b9" />
+
+
+</RelativeLayout>

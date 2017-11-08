@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#34495e">
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        ></include>
+
+    <Button
+        android:id="@+id/btn_student"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="61dp"
+        android:background="@drawable/rounded_button_register"
+        android:drawableLeft="@drawable/user"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        android:text="Student"
+        android:textColor="@color/colorAccent"
+        android:visibility="visible"
+        android:layout_below="@+id/tool_bar"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btn_violation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btn_violators"
+        android:layout_alignStart="@+id/btn_violators"
+        android:layout_below="@+id/btn_violators"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/rounded_buttton_violate"
+        android:drawableLeft="@drawable/violate"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        android:text="Violation"
+        android:textColor="@color/colorAccent" />
+
+    <Button
+        android:id="@+id/btn_violators"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btn_prof"
+        android:layout_alignStart="@+id/btn_prof"
+        android:layout_below="@+id/btn_prof"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/rounded_buttton_violate"
+        android:drawableLeft="@drawable/violator"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        android:text="Violators"
+        android:textColor="@color/colorAccent"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/btn_prof"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btn_student"
+        android:layout_alignStart="@+id/btn_student"
+        android:layout_below="@+id/btn_student"
+        android:layout_marginTop="40dp"
+        android:text="Professor"
+        android:background="@drawable/round_button_prof"
+        android:textColor="@color/colorAccent"
+        android:drawableLeft="@drawable/prof"
+        android:paddingRight="10dp"
+        android:paddingLeft="20dp"/>
+</RelativeLayout>

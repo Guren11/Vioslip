@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        ></include>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="606dp"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/ed_layout_sfname"
+                android:layout_marginTop="70dp"
+                android:text="Student Number"
+                android:textColor="@color/colorAccent" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/ed_layout_sfname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:textColorHint="@color/colorAccent"
+                android:theme="@style/TextLabel">
+
+                <EditText
+                    android:id="@+id/ed_sfname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/textView4"
+                    android:layout_below="@+id/textView4"
+                    android:layout_marginTop="33dp"
+                    android:ems="13"
+                    android:hint="@string/hint_sfname"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/colorAccent"
+                    android:textColorHighlight="@color/colorAccent"
+                    android:textColorHint="@color/colorAccent" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/ed_layout_smname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/ed_layout_sfname"
+                android:layout_alignStart="@+id/ed_layout_sfname"
+                android:layout_below="@+id/ed_layout_sfname"
+                android:layout_marginTop="8dp"
+                android:textColorHint="@color/colorAccent"
+                android:theme="@style/TextLabel">
+
+
+                <EditText
+                    android:id="@+id/ed_smname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/ed_layout_sfname"
+                    android:layout_alignStart="@+id/ed_layout_sfname"
+                    android:layout_below="@+id/ed_layout_sfname"
+                    android:layout_marginTop="22dp"
+                    android:ems="10"
+                    android:hint="@string/hint_smname"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/colorAccent"
+                    android:textColorHighlight="@color/colorAccent"
+                    android:textColorHint="@color/colorAccent" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/ed_layout_slname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/ed_layout_smname"
+                android:layout_alignStart="@+id/ed_layout_smname"
+                android:layout_below="@+id/ed_layout_smname"
+                android:layout_marginTop="19dp"
+                android:textColorHint="@color/colorAccent"
+                android:theme="@style/TextLabel">
+
+                <EditText
+                    android:id="@+id/ed_slname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/ed_layout_smname"
+                    android:layout_alignStart="@+id/ed_layout_smname"
+                    android:layout_below="@+id/ed_layout_smname"
+                    android:layout_marginTop="17dp"
+                    android:ems="10"
+                    android:hint="@string/hint_slname"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/colorAccent"
+                    android:textColorHighlight="@color/colorAccent"
+                    android:textColorHint="@color/colorAccent" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/ed_layout_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/ed_layout_slname"
+                android:layout_alignStart="@+id/ed_layout_slname"
+                android:layout_below="@+id/ed_layout_slname"
+                android:layout_marginTop="17dp"
+                android:textColorHint="@color/colorAccent"
+                android:theme="@style/TextLabel">
+
+                <EditText
+                    android:id="@+id/ed_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/ed_layout_slname"
+                    android:layout_alignStart="@+id/ed_layout_slname"
+                    android:layout_below="@+id/ed_layout_slname"
+                    android:layout_marginTop="21dp"
+                    android:ems="10"
+                    android:hint="@string/hint_email"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/colorAccent"
+                    android:textColorHighlight="@color/colorAccent"
+                    android:textColorHint="@color/colorAccent" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/ed_layout_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/ed_layout_username"
+                android:layout_alignStart="@+id/ed_layout_username"
+                android:layout_below="@+id/ed_layout_username"
+                android:layout_marginTop="15dp"
+                android:textColorHint="@color/colorAccent"
+                android:theme="@style/TextLabel">
+
+
+                <EditText
+                    android:id="@+id/ed_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/ed_layout_username"
+                    android:layout_alignStart="@+id/ed_layout_username"
+                    android:layout_below="@+id/ed_layout_username"
+                    android:layout_marginTop="22dp"
+                    android:ems="10"
+                    android:hint="@string/hint_password"
+                    android:inputType="textPassword"
+                    android:textColor="@color/colorAccent"
+                    android:textColorHighlight="@color/colorAccent"
+                    android:textColorHint="@color/colorAccent" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <EditText
+                android:id="@+id/ed_confirmpass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/ed_layout_password"
+                android:layout_alignStart="@+id/ed_layout_password"
+                android:layout_below="@+id/ed_layout_password"
+                android:layout_marginTop="15dp"
+                android:ems="10"
+                android:hint="@string/hint_confirmpassword"
+                android:inputType="textPassword"
+                android:textColor="@color/colorAccent"
+                android:textColorHighlight="@color/colorAccent"
+                android:textColorHint="@color/colorAccent"
+                android:theme="@style/TextLabel" />
+
+            <Button
+                android:id="@+id/button_rstudent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/ed_confirmpass"
+                android:layout_alignStart="@+id/ed_confirmpass"
+                android:layout_below="@+id/ed_confirmpass"
+                android:layout_marginTop="13dp"
+                android:background="@drawable/rounded_button_register"
+                android:text="Register"
+                android:textColor="@color/colorAccent" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

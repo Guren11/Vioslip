@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#34495e">
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        ></include>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="71dp"
+        android:layout_below="@+id/tool_bar"
+        android:layout_centerHorizontal="true"
+        android:textColorHint="@color/colorAccent"
+        android:theme="@style/TextLabel"
+        android:id="@+id/textInputLayout">
+
+        <EditText
+            android:id="@+id/ed_studentfullname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tool_bar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="84dp"
+            android:ems="13"
+            android:hint="Student Name"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorAccent" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_select_vio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textInputLayout"
+        android:layout_alignStart="@+id/textInputLayout"
+        android:layout_below="@+id/textInputLayout"
+        android:layout_marginTop="31dp"
+        android:background="@drawable/dialog_spinner"
+        android:text="Select Violation"
+        android:textColor="@color/colorAccent" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="89dp"
+        android:background="@drawable/rounded_button"
+        android:text="Submit"
+        android:layout_below="@+id/btn_select_vio"
+        android:layout_alignEnd="@+id/btn_select_vio"
+        android:layout_alignStart="@+id/btn_select_vio" />
+
+    <TextView
+        android:id="@+id/txt_fname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textInputLayout"
+        android:layout_below="@+id/textInputLayout"
+        android:text="First Name , Last Name  Middle Name"
+        android:textColor="@color/colorAccent" />
+
+
+</RelativeLayout>

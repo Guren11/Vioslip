@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Vioslip</string>
+
+
+    <string name="action_settings">Settings</string>
+    <string name="hint_name">Full Name</string>
+    <string name="hint_email">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="btn_sign_up">Login</string>
+    <string name="err_msg_name">Enter your full name</string>
+    <string name="err_msg_email">Enter your username</string>
+    <string name="err_msg_password">Enter the password</string>
+    <string name="btn_register">Register</string>
+    <!-- Student Register -->
+    <string name="hint_sfname">First Name</string>
+    <string name="hint_smname">Middle Name</string>
+    <string name="hint_slname">Last Name</string>
+    <string name="hint_confirmpassword">Confirm Password</string>
+</resources>

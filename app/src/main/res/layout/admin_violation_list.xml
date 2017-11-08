@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        ></include>
+
+    <ListView
+        android:id="@+id/listview_violate"
+        android:layout_width="match_parent"
+        android:layout_height="470dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tool_bar"
+        android:layout_above="@+id/add_vio"></ListView>
+
+
+    <Button
+        android:id="@+id/add_vio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:background="#e74c3c"
+        android:text="Add Violation"
+        android:textColor="@color/colorAccent" />
+
+
+</RelativeLayout>
+
